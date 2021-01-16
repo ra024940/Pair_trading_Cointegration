@@ -6,7 +6,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributor][contributor-shield]][contributor-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -14,7 +13,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/ra024940/Pair_trading_Cointegration">
+  <a href="https://github.com/ra024940/Pair_trading_Cointegration/White_noise.svg.png">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -166,7 +165,5 @@ Project Link: [https://github.com/ra024940/Pair_trading_Cointegration](https://g
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributor-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
-[contributor-url]: https://img.shields.io/github/contributors/grpaiva13/https://github.com/grpaiva13?tab=repositories?style=plastic
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/rafadias/
