@@ -36,12 +36,12 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#statistical-Background">Statistical Background</a></li>
-        <li><a href="#Approach">Project Approach and Definition</a></li>
+        <li><a href="#project-approach-and-definition">Project Approach and Definition</a></li>
       </ul>
     </li>
-    <li><a href="#Development">Development Details</a></li>
-    <li><a href="#Issues">Challenges & Issues</a></li>
-    <li><a href="#Online">Online Rollout</a></li>
+    <li><a href="#development-details">Development Details</a></li>
+    <li><a href="#challenges-&-issues">Challenges & Issues</a></li>
+    <li><a href="#online-rollout">Online Rollout</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
