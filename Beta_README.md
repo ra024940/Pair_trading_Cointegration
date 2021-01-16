@@ -59,10 +59,11 @@ The Project main objetive was to explore the statistical properties of cointegra
 
 * Python
 * SQL
+* Google Cloud
 * Scikit / Sklearn / Statsmodels (*)
 * Matplotlib / Seaborn (*)
 
-(*) Python libraries used for Statitical Methods and Data Preparation, Data Visualization,  
+(*) Python libraries used for ML/Statitical Methods and Data Preparation/Data Visualization,  
 
 <!-- GETTING STARTED -->
 ## Getting Started
