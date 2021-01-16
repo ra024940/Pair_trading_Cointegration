@@ -14,24 +14,11 @@
 <br />
 <p align="center">
   <a href="https://github.com/ra024940/Pair_trading_Cointegration/White_noise.svg.png">
-    <img src="White_noise.svg.png" alt="Logo" width="80" height="80">
+    <img src="White_noise.svg.png" alt="Logo" width="240" height="160">
   </a>
 
   <h3 align="center">Cointegration Trading w/ Machine Learning</h3>
 
-  <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/ra024940/Pair_trading_Cointegration"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/ra024940/Pair_trading_Cointegration">View Demo</a>
-    ·
-    <a href="https://github.com/ra024940/Pair_trading_Cointegration/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/ra024940/Pair_trading_Cointegration/issues">Request Feature</a>
-  </p>
-</p>
 
 
 
