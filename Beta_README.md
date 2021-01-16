@@ -41,6 +41,7 @@
     </li>
     <li><a href="#development-details">Development Details</a></li>
     <li><a href="#challenges-and-issues">Challenges and Issues</a></li>
+    <li><a href="#data-visualization">Data Visualization</a></li>
     <li><a href="#online-rollout">Online Rollout</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -87,6 +88,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Challenges and Issues
 
 See the [open issues](https://github.com/ra024940/Pair_trading_Cointegration/issues) for a list of proposed features (and known issues).
+
+<!-- Data -->
+## Data Visualization
 
 <!-- Online -->
 ## Online Rollout
