@@ -53,11 +53,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`ra024940`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+The Project idea was to explore the statistical properties of cointegration applied to pairs of companies stocks (B3-Brazil Listed Companies) in a manner where the equities could be traded in a Long & Short fashion, thus reducing capital required to trade and exposure to the market volatility.
 
 
 ### Built With
