@@ -57,9 +57,11 @@ The Project main objetive was to explore the statistical properties of cointegra
 
 ### Built With
 
-* []()
-* []()
-* []()
+* Python
+* SQL
+* Scikit
+* LIB de Paralelismo
+*
 
 <!-- GETTING STARTED -->
 ## Getting Started
