@@ -83,7 +83,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- Development -->
 ## Development Details
 
-<!-- Issues -->
+<!-- Challenges & Issues -->
 ## Challenges & Issues
 
 See the [open issues](https://github.com/ra024940/Pair_trading_Cointegration/issues) for a list of proposed features (and known issues).
