@@ -53,16 +53,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The Project idea was to explore the statistical properties of cointegration applied to pairs of companies stocks (B3-Brazil Listed Companies) in a manner where the equities could be traded in a Long & Short fashion, thus reducing capital required to trade and exposure to the market volatility.
-
+The Project main objetive was to explore the statistical properties of cointegration applied to pairs of companies stocks (B3-Brazil Listed Companies) in a manner where the equities could be traded in a Long & Short fashion, thus reducing capital required to trade and exposure to the market volatility. Secondary goal was to design and implement the framework to collect, store, manipulate and explore data from the B3 Database in the Cloud, building the path to other trading strategies that could benefit from the system backbone.
 
 ### Built With
 
 * []()
 * []()
 * []()
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
