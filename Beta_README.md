@@ -14,7 +14,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ra024940/Pair_trading_Cointegration/White_noise.svg.png">
-    <img src="White_noise.svg.png" alt="Logo" width="240" height="160">
+    <img src="Eletronic.jpg" alt="Logo" width="440" height="209">
   </a>
 
   <h3 align="center">Cointegration Trading w/ Machine Learning</h3>
