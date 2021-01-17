@@ -71,12 +71,13 @@ The Project main objetive was to explore the statistical properties of cointegra
 <!-- GETTING STARTED -->
 ## Getting Started
 
-** IMPORTANT ** This project contains intellectual proprerty, thus, not all details are disclosed in this article.
+** IMPORTANT    ** This project contains intellectual proprerty, thus, not all details are disclosed in this article.
+** IMPORTANT II ** This Article does not have the pretension to be an academic publication, although it has some similarities in it's structure
 
 <!-- Statistical -->
 ### Background and Statistical Concepts
 
-A pairs trading strategy that is based on statistical procedures is a special form of statistical arbitrage investment strategy. Cointegration, which is the main topic of this article, was largely introduced in the financial market by the work of Do, Faff, and Hamza (2006). The cointegration method is a model based, parametric approach that assumes the existence of a common stochastic trend in the price series of two financial assets. In order to understand the concept, it is important to be familiar
+A pairs trading strategy that is based on statistical procedures is a special form of statistical arbitrage investment strategy. Cointegration, which is the main subject of this project, was largely introduced in the financial market by the work of Do, Faff, and Hamza (2006). The cointegration method is a model based, parametric approach that assumes the existence of a common stochastic trend in the price series of two financial assets. In order to understand the concept, it is important to be familiar
 with the idea behind stationary and non-stationary time series **[[Suggested Reference]](https://otexts.com/fpp2/stationarity.html)**. An important feature of two cointegrated time series is that there exists a linear combination of the two non-stationary time series that has a constant mean, which can be explored as a "mean reverting" trading strategy, betting that the relation between the two time-series will prevail and return to the mean, as long as the pair is cointegrated. The only problem that remains, is the issue that we do not know whether two time series, are actually cointegrated or not.
 
 There are several different approaches to address this issue, the method used on this project was to fit a ordinary least square regression (OLS) between the daily close prices of two stocks plus the time variable.
