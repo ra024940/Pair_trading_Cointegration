@@ -114,13 +114,6 @@ Rafael Dias - [@rafael_rdias](https://twitter.com/rafael_rdias) - rrdias108@gmai
 
 Project Link: [https://github.com/ra024940/Pair_trading_Cointegration](https://github.com/ra024940/Pair_trading_Cointegration)
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
-
 <!-- References -->
 ## References
 
