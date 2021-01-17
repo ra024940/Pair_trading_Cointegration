@@ -35,7 +35,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#statistical-Background">Statistical Background</a></li>
+        <li><a href="#statistical-and-Background">Statistical Concept and Background</a></li>
         <li><a href="#project-approach-and-definition">Project Approach and Definition</a></li>
       </ul>
     </li>
@@ -45,6 +45,7 @@
     <li><a href="#online-rollout">Online Rollout</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#references">References</a></li>
   </ol>
 </details>
 
@@ -68,12 +69,15 @@ The Project main objetive was to explore the statistical properties of cointegra
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
+** IMPORTANT ** This project contains intellectual proprerty, thus, not all details are disclosed in this article.
 
 <!-- Statistical -->
-### Statistical Background
+### Statistical Concept and Background
 
+A pairs trading strategy that is based on statistical procedures is a special form of statistical arbitrage investment strategy. Cointegration, which is the main topic of this article, was largely introduced in the financial market by the work of Do, Faff, and Hamza (2006). The cointegration method is a model based, parametric approach that assumes the existence of a common stochastic trend in the price series of two financial assets. In order to understand the concept, it is important to be familiar
+with the idea behind stationary and non-stationary time series **[Stationary Time Series](https://otexts.com/fpp2/stationarity.html)**. An important feature of two cointegrated time series is that there exists a linear combination of the two non-stationary time series that has a constant mean, which can be explored as a "mean reverting" Strategy. The only problem that remains, is the issue that we do not know whether two time series, are actually cointegrated or not.
 
+long-short investment strategies are usually considered absolute return strategies, meaning that they have only negligible exposure with respect to a representative market index.
 <!-- Approach -->
 ### Project Approach and Definition
 
@@ -97,16 +101,10 @@ See the [open issues](https://github.com/ra024940/Pair_trading_Cointegration/iss
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@rafael_rdias](https://twitter.com/rafael_rdias) - rrdias108@gmail.com
+Rafael Rodrigues Dias - [@rafael_rdias](https://twitter.com/rafael_rdias) - rrdias108@gmail.com
 
 Project Link: [https://github.com/ra024940/Pair_trading_Cointegration](https://github.com/ra024940/Pair_trading_Cointegration)
 
@@ -116,6 +114,13 @@ Project Link: [https://github.com/ra024940/Pair_trading_Cointegration](https://g
 * []()
 * []()
 * []()
+
+<!-- References -->
+## References
+
+* Celume MP, Besançon M & Zenasni F 2019, 'Fostering children and adolescents’ creative thinking in education: theoretical model of drama pedagogy training', Frontiers in Psychology, vol. 9, viewed 11 February 2019, <https://www.frontiersin.org/article/10.3389/fpsyg.2018.02611>
+* Evan Gatev, 2006, 
+* Do, Faff, and Hamza (2006)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
