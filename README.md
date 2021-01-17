@@ -109,7 +109,8 @@ Contributions are what make the open source community such an amazing place to b
 <!-- CONTACT -->
 ## Contact
 
-Rafael Rodrigues Dias - [@rafael_rdias](https://twitter.com/rafael_rdias) - rrdias108@gmail.com
+Giovanni Rizzo - paiva.giovanni@gmail.com
+Rafael Dias - [@rafael_rdias](https://twitter.com/rafael_rdias) - rrdias108@gmail.com
 
 Project Link: [https://github.com/ra024940/Pair_trading_Cointegration](https://github.com/ra024940/Pair_trading_Cointegration)
 
