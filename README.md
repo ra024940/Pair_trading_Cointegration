@@ -93,7 +93,7 @@ In the image below it is possible to see an example of the plotted Z-Score of th
 <br />
 <p align="center">
   <a href="https://github.com/ra024940/Pair_trading_Cointegration/Error-coint.png">
-    <img src="Error-coint.png" alt="Logo" width="440" height="209">
+    <img src="Error-coint.png" alt="Logo" width="550" height="209">
   </a>
 
 <!-- Approach -->
