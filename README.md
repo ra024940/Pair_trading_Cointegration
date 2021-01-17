@@ -35,7 +35,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#statistical-and-Background">Statistical Concept and Background</a></li>
+        <li><a href="#background-and-statistical-concepts">Background and Statistical Concepts</a></li>
         <li><a href="#project-approach-and-definition">Project Approach and Definition</a></li>
       </ul>
     </li>
