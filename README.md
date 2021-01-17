@@ -86,7 +86,15 @@ To further explore this concept, consider that we have two time series composed 
 <p align="center">
              Y(price A) = α(Time) + βX(Price B) + ε , for t = 1, . . . , T
                 
-The idea behind this procedure is to get the regression error term (ε) for each T and this time-series could be assumed to be Stationary. To test this Null Hypothesis, it was  performed the augmented Dickey-Fuller test (ADF), and considered as a candidate for trading those pairs that had a test statistic greater than the 5% critical value for multiple periods considered in the regression, as stated above we performe multiple regressions with different data collection sizes to achieve greater confidence ( Last 100, 120, ..., N daily closes). 
+The idea behind this procedure is to get the regression error term (ε) for each T and this time-series could be assumed to be Stationary. To test this Null Hypothesis, it was  performed the augmented Dickey-Fuller test (ADF), and considered as a candidate for trading those pairs that had a test statistic greater than the 5% critical value for multiple periods considered in the regression, as stated above we performe multiple regressions with different data collection sizes to achieve greater confidence ( Last 100, 120, ..., N daily closes), later the number os historical periodos cointegrated was used as a feature of the model.
+
+In the image below it is possible to see an example of the plotted Z-Score of the Error term from a pair of cointegrated Stocks; rigourously, the error term time-series from the regression of the Stocks is cointegrated, but in order to simplify, we will refer as a cointegrated pair of Stocks; 
+
+<br />
+<p align="center">
+  <a href="https://github.com/ra024940/Pair_trading_Cointegration/Error-coint.png">
+    <img src="Error-coint.png" alt="Logo" width="440" height="209">
+  </a>
 
 <!-- Approach -->
 ### Project Approach and Definition
