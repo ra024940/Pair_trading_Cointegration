@@ -82,8 +82,8 @@ with the idea behind stationary and non-stationary time series **[[Suggested Ref
 There are several different approaches to address this issue, the method used on this project was to fit a ordinary least square regression (OLS) between the prices of the stocks related and the time variable.
 
 To further explore this concept, consider that we have two time series composed by the daily close prices of Stocks A and B, for each pair A/B we performed regressions such as described below for multiple time-series sizes (E.g 100, 120, ..., N - Historical Daily Close Prices).
-
-             <h3 align="center"> Y(price A) = α(Time) + βX(Price B) + ε , for t = 1, . . . , T </h3> 
+<p align="center">
+             Y(price A) = α(Time) + βX(Price B) + ε , for t = 1, . . . , T
                 
 The idea behind this procedure is to get the regression error term (ε) for each T and this time-series could be assumed to be Stationary. To test this Null Hypothesis, it was  performed the augmented Dickey-Fuller test (ADF)
 
