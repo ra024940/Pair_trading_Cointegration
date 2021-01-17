@@ -127,9 +127,8 @@ Project Link: [https://github.com/ra024940/Pair_trading_Cointegration](https://g
 <!-- References -->
 ## References
 
-* Celume MP, Besançon M & Zenasni F 2019, 'Fostering children and adolescents’ creative thinking in education: theoretical model of drama pedagogy training', Frontiers in Psychology, vol. 9, viewed 11 February 2019, <https://www.frontiersin.org/article/10.3389/fpsyg.2018.02611>
-* Evan Gatev, 2006, 
-* Do, Faff, and Hamza (2006)
+* Evan Gatev, 2006, Pairs Trading: Performance of a Relative Value Arbitrage Rule.
+* Do, B., Faff, R. and Hamza, K. (2006) A New Approach to Modelling and Estimation for Pairs Trading.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
