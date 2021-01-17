@@ -54,7 +54,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The Project main objetive was to explore the statistical properties of cointegration applied to pairs of companies stocks (B3-Brazil Listed Companies) in a manner where the equities could be traded in a Long & Short fashion, thus reducing capital required to trade and exposure to the market volatility. Secondary goal was to design and implement the framework to collect, store, manipulate and explore data from the B3 Database in the Cloud, building the path to other trading strategies that could benefit from the system backbone.
+The Project main objetive was to explore the statistical properties of cointegration applied to pairs of companies stocks (B3-Brazil Listed Companies) in a manner where the equities could be traded in a Long & Short fashion**, thus reducing capital required to trade and exposure to the market volatility. Secondary goal was to design and implement the framework to collect, store, manipulate and explore data from the B3 Database in the Cloud, building the path to other trading strategies that could benefit from the system backbone.
+
+** long-short investment strategies are usually considered absolute return strategies, meaning that they have only negligible exposure with respect to a representative market index, since the produre is to Sell one Stock and buy the Other.
 
 ### Built With
 
@@ -77,7 +79,14 @@ The Project main objetive was to explore the statistical properties of cointegra
 A pairs trading strategy that is based on statistical procedures is a special form of statistical arbitrage investment strategy. Cointegration, which is the main topic of this article, was largely introduced in the financial market by the work of Do, Faff, and Hamza (2006). The cointegration method is a model based, parametric approach that assumes the existence of a common stochastic trend in the price series of two financial assets. In order to understand the concept, it is important to be familiar
 with the idea behind stationary and non-stationary time series **[[Suggested Reference]](https://otexts.com/fpp2/stationarity.html)**. An important feature of two cointegrated time series is that there exists a linear combination of the two non-stationary time series that has a constant mean, which can be explored as a "mean reverting" Strategy. The only problem that remains, is the issue that we do not know whether two time series, are actually cointegrated or not.
 
-long-short investment strategies are usually considered absolute return strategies, meaning that they have only negligible exposure with respect to a representative market index.
+There are several different approaches to address this issue, the method used on this project was to fit a ordinary least square regression (OLS) between the prices of the stocks related and the time variable.
+
+To further explore this concept, consider that we have two time series composed by the daily close prices of Stocks A and B, for each pair A/B we performed regressions such as described below for multiple time-series sizes (E.g 100, 120, ..., N - Historical Daily Close Prices).
+
+             <h3 align="center"> Y(price A) = α(Time) + βX(Price B) + ε , for t = 1, . . . , T </h3> 
+                
+The idea behind this procedure is to get the regression error term (ε) for each T and this time-series could be assumed to be Stationary. To test this Null Hypothesis, it was  performed the augmented Dickey-Fuller test (ADF)
+
 <!-- Approach -->
 ### Project Approach and Definition
 
