@@ -98,6 +98,8 @@ In the image below (IMAGE 01) it is possible to see an example of the plotted Z-
 
 The main idea implemented in this project was to constantly monitor the pairs and trade them whenever the Z-Score of a cointegrated pair of stocks went further than 2 standard deviation, looking at the IMAGE 01, you can see that the latest point recorded was between +1 and +2 standard deviations, so it could not be traded at that moment.  When the Z-Score (for a given A/B pair) value gets smaller than zero, that implies that security A is undervalued in terms of security B, in which case we short-sell security B and purchase security A. If the Z-Score is larger than zero, we short-sell security A and purchase security B.
 
+That being said, there is evidence that, due to the heavy arbitrage activity, simple cointegration trading returns are dwindled with tighter spreads and less trading opportunities, as stated by Hoel, 2013.
+
 <!-- Approach -->
 ### Project Approach and Definition
 
@@ -130,6 +132,7 @@ Project Link: [https://github.com/ra024940/Pair_trading_Cointegration](https://g
 
 * Evan Gatev, 2006, Pairs Trading: Performance of a Relative Value Arbitrage Rule.
 * Do, B., Faff, R. and Hamza, K. (2006) A New Approach to Modelling and Estimation for Pairs Trading.
+* Hoel, Christoffer Haakon, Statistical Arbitrage Pairs: Can Cointegration Capture Market Neutral Profits?
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
