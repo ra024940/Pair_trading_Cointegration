@@ -102,6 +102,14 @@ Nevertheless, our project faced two major problems. For one, there is evidence t
 <!-- Approach -->
 ### Project Approach and Definition
 
+To Approach this scenario, our proposal was to create a consistent dataset that could shed some light into the brazilian stock market regarding cointegration investing and design a intelligent system that could benefit from such database and achieve higher accuracy than simple cointegration investing.
+
+Creating a database to work with, meant to us that we needed to gather a representative historical dataset of cointegration trading candidates, along with its native characteristics and market conditions at the moment of the trade, and, of course, if the trading candidate was profitable or not. To achieve that, we could assemble, with financial market community, through a poll-like inventory, all cointegration trades performed in the last years and use this information to contruct the dataset. Obviouly, that endevour would never be succesfull, most players dont keep an accurate track of its investing history, and those who did would never disclose such sensitive information.
+
+To address that, we decided to create our own historical dataset of cointegration trading candidates, by running a massive search in the last years of all possible candidates and gather/construct its inherent cointegration information (1), 
+
+(1) By inherent cointegration information we mean all atributes and properties related to the cointegration at that moment, e.g. The T-statistic product of the ADF Test
+
 <!-- Development -->
 ## Development Details
 
