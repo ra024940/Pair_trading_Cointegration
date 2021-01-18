@@ -36,6 +36,7 @@
       <ul>
         <li><a href="#background-and-statistical-concepts">Background and Statistical Concepts</a></li>
         <li><a href="#project-approach-and-definition">Project Approach and Definition</a></li>
+        <li><a href="#data-modeling-process">Data modeling process</a></li>
       </ul>
     </li>
     <li><a href="#development-details">Development Details</a></li>
@@ -111,6 +112,9 @@ To address that, we decided to create our own historical dataset of cointegratio
 <br />
 (1) By inherent cointegration information we mean all atributes and properties related to the cointegration at that moment, e.g. The T-statistic product of the ADF Test or the Z-Score of the regression error term at that moment, some os these information will be finally used as features consumed by the Machine Learning algorithm, we will further explore this subject in the next sections of this article. <br />
 (2) As Stated above, for every candidate, we decided to run several regressions considering different timeframes to achieve higher confidence (last 100 days, 120 days, ......, N Days), this would mean that the greater is the number of cointegrated periods the higher was the confidence that the candidate was indeed cointegrated at that moment.
+
+<!-- Approach -->
+### Data Modeling Process
 
 <!-- Development -->
 ## Development Details
