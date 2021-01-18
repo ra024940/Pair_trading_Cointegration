@@ -18,7 +18,7 @@
   </a>
 
   <h3 align="center">Cointegration Trading w/ Machine Learning</h3>
-
+</p>
 
 
 
