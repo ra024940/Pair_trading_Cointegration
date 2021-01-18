@@ -109,7 +109,7 @@ Creating a database to work with, meant to us that we needed to gather a represe
 
 To address that, we decided to create our own historical dataset of cointegration trading, by running a massive exploration on the last years of all possible candidates to gather/construct its inherent cointegration information **(1)** and market conditions for that moment. To accomplish that we had to plan what information would be usefull for the future model and scan each pair of stocks for every point in the timeseries (last 5 years), this proved to be a computational challenge since we had to run several regressions **(2)**, statitical manipulations, which included the expensive (and primordial) cointegration test (ADF), for every datapoint, over all possible Ibovespa stock pairs (exactly 3906) for the last 5 years. The effort would be proportional to the timeframe considered in the historic data exploration, for instance, we could perform the search every 1, 5, 10, 15 minutes, or any other timeframe in accordance with the frequency of price data available in the database that we used. There was a trade-off between higher and lower frequencies to considered on the search, if the search were to be made on high frequency, we could bring to much "noise" to the dataset and the exploration could take weeks (if not months!!!) of computational time, based on the infrastructure that we had available on the cloud, in the other hand if the search were to be executed on higher frequencies, we faced the risk that the data could not be representative for building a model upon. 
 
-With the dataset in hands **(3)**, we had to increment it with aditional information required for the modeling we intended to create, this step was executed on a subset of the greater database, composed exclusively by actual trading candidates, which were selected based on a set of rules that defined the minimum requirements that a pair should meet at any given time. For example, we would not trade a given pair of stocks that were cointegrated only for the last 100 days or a pair that the Z-score spread were not beyond, at least, +/-2 standard deviations. The most important additions we made to the dataset were features capturing market conditions (e.g. historical volatility), cointegration stability (e.g is the Z-Score returning at that moment after a wider spread?) and the trade financial result, were the trade taken at that moment. To measure financial results, we had to came up with policies for when to take profits, loss or abandon the trade, for instance, we could decide, based on the total financial amount moved by the trade **(4)**, to take profits with 2% and loss of 1% and abandon the trade if reaches its statistical half-lie.
+With the dataset in hands **(3)**, we had to increment it with aditional information required for the modeling we intended to create, this step was executed on a subset of the greater database, composed exclusively by actual trading candidates, which were selected based on a set of rules that defined the minimum requirements that a pair should meet at any given time. For example, we would not trade a given pair of stocks that were cointegrated only for the last 100 days or a pair that the Z-score spread were not beyond, at least, +/-2 standard deviations. The most important additions we made to the dataset were features capturing market conditions (e.g. historical volatility), cointegration stability (e.g is the Z-Score returning at that moment after a wider spread?) and the trade financial result, were the trade taken at that moment. To measure financial results, we had to came up with policies for when to take profits, loss or abandon the trade, for instance, we could decide, based on the total financial amount moved by the trade **(4)**, to take profits with 2% and loss of 1% and abandon the trade if reaches its statistical half-life.
 
 <br />
 (1) By inherent cointegration information we mean all atributes and properties related to the cointegration at that moment, e.g. The T-statistic product of the ADF Test or the Z-Score of the regression error term at that moment, some os these information will be finally used as features consumed by the Machine Learning algorithm, we will further explore this subject in the next sections of this article. <br />
@@ -120,23 +120,35 @@ With the dataset in hands **(3)**, we had to increment it with aditional informa
 <!-- Data -->
 ### Data Modeling Process
 
+Concluded the stage of creating the project dataset, that by that time consisted of cointegration trades that met our minimum requirement rules for the last 5 years, the next step would be to take advantage of this data, at that point we planned to create a model based on sistematic trading rules (learned by data exploration) and, in parallel, train a Machine Learning algorithms and compare the performance to different market cycles.
 
+First of all, we had to guarantee the integrity of the data we generated, some of those findings are listed in the data visualization section of this article, but overall the data seem to be of acceptable quality, with clear normal distribution among its many features, some outliers where dealt with, and all procedures required for data preparation were implemented, such as cleaning for missing values **(1)**, normalization, encoding text and categorical atributes.
+
+The sistematic trading rules system was the first to be implemented, different sets of trading rules (based on the features) were created based on expert financial knowledge, for example, a simple trading rules would be, trade only cointegrated pairs that have 1% of critical value as result of the ADF Test, with Z-Score that exceeds +/- 3 standard deviations (that was not one of the Trading rules we used). The results of investing using those different set of rules were measured on historical using a unique backtesting system that we design to simulate limitations natural to the real investiment process, such as, limitation in the number of trades that could be open at the same time, limitation on cash available for margin guarantees required by the financial institutions, applied to multiple randomized scenarios to mitigate the risk of overfitting. 
+
+(1) You may wonder how could we have missing values since we created our own dataset, many of our procedures were implemented with paralell processing and took many days to finish, some of them (less than 0,1%) returned with missing values, due to particular reasons that are not worth exploring here.
 
 <!-- Development -->
 ## Development Details
 
 <!-- Challenges & Issues -->
-## Challenges and Issues
+## Major Challenges
+
+* Intraday vs Day Close
+* Dataset creation Peformance Optimization
+* Modelling Time Series (i.i.d)
+* Sampling - Clusters on Data
+* Recall vs Precision Trade-off
 
 See the [open issues](https://github.com/ra024940/Pair_trading_Cointegration/issues) for a list of proposed features (and known issues).
 
 <!-- Data -->
 ## Data Visualization
 
+
 <!-- Online -->
 ## Online Rollout
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 <!-- CONTACT -->
 ## Contact
