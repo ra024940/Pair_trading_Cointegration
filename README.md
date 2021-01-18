@@ -115,7 +115,8 @@ With the dataset in hands (3), we had to increment it with aditional information
 (1) By inherent cointegration information we mean all atributes and properties related to the cointegration at that moment, e.g. The T-statistic product of the ADF Test or the Z-Score of the regression error term at that moment, some os these information will be finally used as features consumed by the Machine Learning algorithm, we will further explore this subject in the next sections of this article. <br />
 (2) As Stated above, for every candidate, we decided to run several regressions considering different timeframes to achieve higher confidence (last 100 days, 120 days, ......, N Days), this would mean that the greater is the number of cointegrated periods the higher was the confidence that the candidate was indeed cointegrated at that moment.<br />
 (3) At that moment, the dataset was composed by a time-series for each pair, that included basic cointegration information along with statitical estimates produced concurrently, including, of course, the results of the cointegration test executed, which was the most basic information to determined if that pair could be traded at any given moment <br />
-<!-- Approach -->
+
+<!-- Data -->
 ### Data Modeling Process
 
 
