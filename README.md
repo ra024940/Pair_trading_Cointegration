@@ -148,13 +148,19 @@ Time series forecasting can be re-framed as a supervised learning problem, and t
 <!-- Results -->
 ### Results
 
-To evaluate the results of our models, we did not use classical train/teste split of data. When dealing with time-related and dynamically changing environments, where the characteristics of the environment change throughout time, it is best to use time-based splitting to provide statistically robust model evaluation and best simulate real-life scenarios. For this we should use time-based cross validation, a method taken from the time-series field, which forms a type of “sliding window” training approach, as you can see represented in the image below. As you can see, in this method, older data is dropped while we move to further steps, this is particular usefull for our dataset, since the features that we engineered to capture financial market seasonality usually lost predictive power the older it gets. 
-
+To evaluate the results of our models, we did not use classical train/test split of data, instead, we used a walk-forward approach. When dealing with time-related and dynamically changing environments, where the characteristics of the environment change throughout time, it is best to use time-based splitting to provide statistically robust model evaluation and best simulate real-life scenarios. For this we should use time-based cross validation, a method taken from the time-series field, which forms a type of “sliding window” training approach, as you can see represented in the image below. As you can see, in this method, older data is dropped while we move to further steps, this is particular usefull for our dataset, since the features that we engineered to capture financial market seasonality usually lost predictive power the older it gets. There are methods, such as traditional cross-validation or K-fold, but these methods create several slots of data that are shuffled to create multiple train/test aplits, we cannot choose random samples and assign them to either the test set or the train set because it makes no sense to use the values from the future to forecast values in the past.
 <br />
 <p align="center">
   <img src="sliding_window.png" alt="Logo" width="560" height="266">
 <br />
- 
+
+Evaluating a classifier is often significantly trickier than evaluating a regressor, there are many performance measures available, along the way we kept track using the confusion matrix, but in the end settle for optimizing the model based on positive predictive value, also know as Precision.
+
+<br />
+<p align="center">
+  <img src="precision.png" alt="Logo" width="237" height="44">
+<br />
+
 <!-- Development -->
 ## Development Topics
 
