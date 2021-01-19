@@ -154,12 +154,14 @@ To evaluate the results of our models, we did not use classical train/test split
   <img src="sliding_window.png" alt="Logo" width="560" height="266">
 <br />
 
-Evaluating a classifier is often significantly trickier than evaluating a regressor, there are many performance measures available, along the way we kept track using the confusion matrix, but in the end settle for optimizing the model based on positive predictive value, also know as Precision.
+Evaluating a classifier is often significantly trickier than evaluating a regressor, there are many performance measures available, along the way we kept track using the confusion matrix, but in the end decided for optimizing the model based on positive predictive value, also know as Precision.
 
 <br />
 <p align="center">
   <img src="precision.png" alt="Logo" width="474" height="88">
 <br />
+
+Using precision for evaluating and optimizing our models, meant that we settle for having a higher accuracy in predicting if a trade would be profitable or not, but, also meant that we would incur in having a high level of False Negative, in other words we would miss many profitable trades, and to achieve the levels of precision that we were expecting we could end up creating a highly selective model that could flag only a few trades monthly and would affect our confidence interval. To avoid that we diversified our model candidate list with different restriction levels.
 
 <!-- Development -->
 ## Development Topics
