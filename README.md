@@ -157,12 +157,12 @@ Texto referente a imagem acima Texto referente a imagem acimaTexto referente a i
 Texto referente a imagem acima Texto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acima
 
 <p align="center">
-  <img src="adf_stat_percoint.png" alt="Logo" width="459" height="440">
+  <img src="adf_stat_percoint.png" alt="Logo" width="690" height="660">
 </p>
 Texto referente a imagem acima Texto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acima
 
 <p align="center">
-  <img src="adfstat_periodo.png" alt="Logo" width="591" height="440">
+  <img src="adfstat_periodo.png" alt="Logo" width="885" height="660">
 </p>
 Texto referente a imagem acima Texto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acima
 
