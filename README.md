@@ -148,7 +148,7 @@ Time series forecasting can be re-framed as a supervised learning problem, and t
 <!-- Results -->
 ### Results
 
-To evaluate the results of our models, we did not use classical train/teste split of data. When dealing with time-related and dynamically changing environments, where the characteristics of the environment change throughout time, it is best to use time-based splitting to provide statistically robust model evaluation and best simulate real-life scenarios. For this we should use time-based cross validation, a method taken from the time-series field, which forms a type of “sliding window” training approach, as you can see represented in the image below.
+To evaluate the results of our models, we did not use classical train/teste split of data. When dealing with time-related and dynamically changing environments, where the characteristics of the environment change throughout time, it is best to use time-based splitting to provide statistically robust model evaluation and best simulate real-life scenarios. For this we should use time-based cross validation, a method taken from the time-series field, which forms a type of “sliding window” training approach, as you can see represented in the image below. As you can see, in this method, older data is dropped while we move to further steps, this is particular usefull for our dataset, since the features that we engineered to capture financial market seasonality usually lost predictive power the older it gets. 
 
 <br />
 <p align="center">
