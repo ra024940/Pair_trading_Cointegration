@@ -157,12 +157,12 @@ Texto referente a imagem acima Texto referente a imagem acimaTexto referente a i
 Texto referente a imagem acima Texto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acima
 
 <p align="center">
-  <img src="adf_stat_percoint.png" alt="Logo" width="918" height="879">
+  <img src="adf_stat_percoint.png" alt="Logo" width="459" height="440">
 </p>
 Texto referente a imagem acima Texto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acima
 
 <p align="center">
-  <img src="adfstat_periodo.png" alt="Logo" width="1183" height="881">
+  <img src="adfstat_periodo.png" alt="Logo" width="591" height="440">
 </p>
 Texto referente a imagem acima Texto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acima
 
@@ -172,12 +172,12 @@ Texto referente a imagem acima Texto referente a imagem acimaTexto referente a i
 Texto referente a imagem acima Texto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acima
 
 <p align="center">
-  <img src="desvio_meiavida.png" alt="Logo" width="907" height="879">
+  <img src="desvio_meiavida.png" alt="Logo" width="453" height="440">
 </p>
 Texto referente a imagem acima Texto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acima
 
 <p align="center">
-  <img src="adf_sign_desvio.png" alt="Logo" width="918" height="879">
+  <img src="adf_sign_desvio.png" alt="Logo" width="459" height="440">
 </p>
 Texto referente a imagem acima Texto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acima
 
