@@ -77,7 +77,7 @@ The Project main objetive was to explore the statistical properties of cointegra
 
 ** IMPORTANT     ** This project contains intellectual proprerty, thus, not all details are disclosed in this article. <br />
 ** IMPORTANT II  ** This Article does not have the pretension to be an academic publication, although it has some similarities in it's structure <br />
-** IMPORTANT III ** The objective of this article is to provide overall unstanding of the concept and concepts used, the topics are not scrutinize at full lenght
+** IMPORTANT III ** The objective of this article is to provide overall unstanding of the concept and concepts used, the topics are not scrutinized at full lenght
 
 <!-- GETTING STARTED -->
 ## Project Definition
