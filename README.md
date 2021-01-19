@@ -145,7 +145,13 @@ See the [open issues](https://github.com/ra024940/Pair_trading_Cointegration/iss
 <!-- Data -->
 ## Data Visualization
 
-
+<br />
+<p align="center">
+  <a href="https://github.com/ra024940/Pair_trading_Cointegration/distribution_desvio.png">
+    <img src="distribution_desvio.png" alt="Logo" width="370" height="270">
+  Texto Base do bagulho aqui
+  </a>
+</p>
 <!-- Online -->
 ## Online Rollout
 
