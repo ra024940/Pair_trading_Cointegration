@@ -33,11 +33,12 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">Project Definition</a>
       <ul>
         <li><a href="#background-and-statistical-concepts">Background and Statistical Concepts</a></li>
-        <li><a href="#project-approach-and-definition">Project Approach and Definition</a></li>
+        <li><a href="#project-approach-and-definition">Approach and Specifications</a></li>
         <li><a href="#data-modeling-process">Data modeling process</a></li>
+        <li><a href="#results">Results</a></li>
       </ul>
     </li>
     <li><a href="#development-details">Development Details</a></li>
@@ -136,6 +137,9 @@ Time series forecasting can be re-framed as a supervised learning problem, and t
 <p id="1f"> (2) David Wolpert demonstrated that if you make absolutely no assumption about the data, then there is no reason to prefer one model over any other. This is called the No Free Lunch (NFL) theorem. For some datasets the best model is a linear model, while for other datasets it is a neural network. There is no model that is a priori guaranteed to work better (hence the name of the theorem). The only way to know for sure which model is best is to evaluate them all. Since this is not possible, in practice you make some reasonable assumptions about the data and you evaluate only a few reasonable models.</p>
 
 <p id="1g"> (3) Remember, the whole point of our approach to cointegration is that, once we have confirmed one pair of stocks to be cointegrated, we will take advantage of that and bet that every time one stock gets overvalued or undervalued in terms of the other, the spread (in our case Z-Score) will return to the average, as long as the pair remain cotintegrated.</p>
+
+<!-- Results -->
+### Results
 
 <!-- Development -->
 ## Development Topics
