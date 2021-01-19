@@ -97,7 +97,7 @@ The Project main objetive was to explore the statistical properties of cointegra
 
   The idea behind this procedure is to get the regression error term (ε) for each T and this time-series could be assumed to be Stationary. To test this Null Hypothesis, it was  performed the augmented Dickey-Fuller test (ADF)**[[Suggested Reference]](https://en.wikipedia.org/wiki/Augmented_Dickey%E2%80%93Fuller_test)**, and considered as a candidate for trading those pairs that had a test statistic greater than the 5% critical value for multiple periods considered in the regression, as stated above we performe multiple regressions with different data collection sizes to achieve greater confidence ( Last 100, 120, ..., N daily closes), later the number os historical periodos cointegrated was used as a feature of the model.
 
-  In the image below (IMAGE 01) it is possible to see an example of the plotted Z-Score of the Error term from a pair of cointegrated Stocks; rigourously, the error term time-series from the regression of the Stocks is cointegrated, but in order to simplify, we will refer as a cointegrated pair of Stocks; 
+  In the image below it is possible to see an example of the plotted Z-Score of the Error term from a pair of cointegrated Stocks; rigourously, the error term time-series from the regression of the Stocks is cointegrated, but in order to simplify, we will refer as a cointegrated pair of Stocks; 
 
   <br />
   <p align="center">
@@ -148,8 +148,13 @@ Time series forecasting can be re-framed as a supervised learning problem, and t
 <!-- Results -->
 ### Results
 
+To evaluate the results of our models, we did not use classical train/teste split of data. When dealing with time-related and dynamically changing environments, where the characteristics of the environment change throughout time, it is best to use time-based splitting to provide statistically robust model evaluation and best simulate real-life scenarios. For this we should use time-based cross validation, a method taken from the time-series field, which forms a type of “sliding window” training approach, as you can see represented in the image below.
 
-
+<br />
+<p align="center">
+  <img src="sliding_window.png" alt="Logo" width="560" height="266">
+<br />
+ 
 <!-- Development -->
 ## Development Topics
 
