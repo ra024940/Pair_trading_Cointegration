@@ -70,8 +70,9 @@ The Project main objetive was to explore the statistical properties of cointegra
 <!-- GETTING STARTED -->
 ## Getting Started
 
-** IMPORTANT    ** This project contains intellectual proprerty, thus, not all details are disclosed in this article. <br />
-** IMPORTANT II ** This Article does not have the pretension to be an academic publication, although it has some similarities in it's structure
+** IMPORTANT     ** This project contains intellectual proprerty, thus, not all details are disclosed in this article. <br />
+** IMPORTANT II  ** This Article does not have the pretension to be an academic publication, although it has some similarities in it's structure
+** IMPORTANT III ** The objective of this article is to provide overall unstanding of the concept and concepts used, the topics are not scrutinize at full lenght
 
 <!-- Statistical -->
 ### Background and Statistical Concepts
@@ -137,7 +138,7 @@ Time series forecasting can be re-framed as a supervised learning problem, and t
 <p id="1g"> (3) Remember, the whole point of our approach to cointegration is that, once we have confirmed one pair of stocks to be cointegrated, we will take advantage of that and bet that every time one stock gets overvalued or undervalued in terms of the other, the spread (in our case Z-Score) will return to the average, as long as the pair remain cotintegrated.</p>
 
 <!-- Development -->
-## Development Details
+## Development Topics
 
 <!-- Challenges & Issues -->
 ## Major Challenges
