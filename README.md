@@ -147,11 +147,15 @@ See the [open issues](https://github.com/ra024940/Pair_trading_Cointegration/iss
 
 <br />
 <p align="center">
-  <a href="https://github.com/ra024940/Pair_trading_Cointegration/distribution_desvio.png">
-    <img src="distribution_desvio.png" alt="Logo" width="370" height="270">
-  Texto Base do bagulho aqui
-  </a>
+  <img src="distribution_desvio.png" alt="Logo" width="370" height="270">
 </p>
+Texto referente a imagem acima Texto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acima
+
+<p align="center">
+  <img src="desvio_adfstat" alt="Logo" width="426" height="407">
+</p>
+Texto referente a imagem acima Texto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acima
+
 <!-- Online -->
 ## Online Rollout
 
