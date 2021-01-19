@@ -156,6 +156,26 @@ Texto referente a imagem acima Texto referente a imagem acimaTexto referente a i
 </p>
 Texto referente a imagem acima Texto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acima
 
+<p align="center">
+  <img src="adf_stat_percoint.png" alt="Logo" width="918" height="879">
+</p>
+Texto referente a imagem acima Texto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acima
+
+<p align="center">
+  <img src="meia_vida_adfstat.png" alt="Logo" width="426" height="407">
+</p>
+Texto referente a imagem acima Texto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acima
+
+<p align="center">
+  <img src="desvio_meiavida.png" alt="Logo" width="907" height="879">
+</p>
+Texto referente a imagem acima Texto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acima
+
+<p align="center">
+  <img src="adf_sign_desvio.png" alt="Logo" width="918" height="879">
+</p>
+Texto referente a imagem acima Texto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acimaTexto referente a imagem acima
+
 <!-- Online -->
 ## Online Rollout
 
