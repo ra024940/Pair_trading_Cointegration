@@ -158,7 +158,7 @@ Evaluating a classifier is often significantly trickier than evaluating a regres
 
 <br />
 <p align="center">
-  <img src="precision.png" alt="Logo" width="237" height="44">
+  <img src="precision.png" alt="Logo" width="474" height="88">
 <br />
 
 <!-- Development -->
