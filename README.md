@@ -179,9 +179,11 @@ Those results showed evidence that cointegration investment strategy using machi
 
 * Market data (Stock Price) was obtained through the use of a python library that collect data directly from financial institutions database, we used the metatrader 5 platform connecting on the Rico Investimentos broker, the data was in line with B3 price reference Database.
 
-* Our dataset was created by scaning historical data every 30 minutes, we called this the Cube Generator function, our database had more than 400MM lines with around 50 features.
+* Our dataset was created by scaning historical data every 30 minutes, we called this the CubeGenerator function, our database had more than 400MM lines with around 50 features.
 
 * The first version of the Cube Generator was expected to take more than 120 days of processing time, we had to heavily optmize it, improving iteration/looping structures, migrating from pandas dataframe to dictionary on many of the manipulations and improving pandas indexing where dataframe manipulation remained.
+
+* The CubeGenerator function consisted of a Scan that iterated through intraday prices of a given pair of stocks A/B, to test if, at that moment, the pair was cointegrated. In other words, for each intraday point in the time-series, was performed a regression to describe the price of the stock A in terms of stock B, concatenating the series of N-1 closing day prices and the intraday price in question. The error term product of this regression was transformed into a Z-Score series and tested for stationarity using the Augmented Dickey-Fuller test. This was executed multiple times, on different N's (100 days, 120 days, 140 days.....), as stated previouly.
 
 * Aditionally, we executed Cube Generator using Python ProcessPoolExecutor from concurrent.futures, distributing the creation of the cube for a single stock pair as a process on the CPU available, we had almost 4k pairs on the loop.
 
