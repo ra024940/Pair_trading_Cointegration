@@ -165,7 +165,7 @@ Using precision for evaluating and optimizing our models, meant that we settle f
 
 In the end, machine learning models outperformed the sistematic rules trading system, in terms of precision, but specially in terms of stability <a href="#1h">**(1)**</a>. This was particullar important, equilibrium was one of our main goals by using lerning methods, and this is one of the most critical issues of implementing automatic trading systems, because if you build a trading system that has, on average, good returns but suffer from wild variations (extremelly good and bad periods) you could, potentially, endup losing your account, and that is much more frequent than an unadvised person could guess.
 
-<p id="1g"> (1) By stability, we mean that had the ability to generalize, or the model's ability to adapt to different market conditions, such as neutral or high volatility markets, bull markets or bear markets. We could do that by analysing to what conditions the models were exposed in the walks of the sliding windows approach.</p>
+<p id="1h"> (1) By stability, we mean that had the ability to generalize, or the model's ability to adapt to different market conditions, such as neutral or high volatility markets, bull markets or bear markets. We could do that by analysing to what conditions the models were exposed in the walks of the sliding windows approach.</p>
 
 <!-- Development -->
 ## Development Topics
