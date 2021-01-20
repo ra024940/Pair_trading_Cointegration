@@ -49,7 +49,6 @@
     <li><a href="#data-visualization">Data Visualization</a></li>
     <li><a href="#online-rollout">Online Rollout</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
     <li><a href="#references">References</a></li>
   </ol>
 </details>
