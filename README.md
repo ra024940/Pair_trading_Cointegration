@@ -45,8 +45,7 @@
         <li><a href="#results">Results</a></li>
       </ul>
     </li>
-    <li><a href="#development-details">Development Details</a></li>
-    <li><a href="#challenges-and-issues">Challenges and Issues</a></li>
+    <li><a href="#development-topics-and-challenges">Development Topics and Challenges</a></li>
     <li><a href="#data-visualization">Data Visualization</a></li>
     <li><a href="#online-rollout">Online Rollout</a></li>
     <li><a href="#contact">Contact</a></li>
