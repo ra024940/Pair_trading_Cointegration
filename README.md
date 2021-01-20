@@ -197,6 +197,8 @@ Those results showed evidence that cointegration investment strategy using machi
 
 * We created our own gridsearch library for hyperparameter optimization, the ones available on python libraries used evaluation metrics that were not adequate for our purposes.
 
+* Since we optimized our models to have higher precision feature selecion was not an easy task. It is known that there is no best method for selecting the best features from your data set to your model, instead, you must discover what works best for your specific problem using careful systematic experimentation, there is a large range of different methods to approach that, we used a combination of feature importante from Random Forest and field expert knowledge.
+
 <!-- Data -->
 ## Data Visualization
 
