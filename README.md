@@ -212,31 +212,39 @@ Those results showed evidence that cointegration investment strategy using machi
 </p>
 The image above show the distribution of trades in terms Z-Score mearures (How many Standard Deviation away from the mean), we can clearly see the normal distribution curve.
 
+<br />
+
 <p align="center">
   <img src="desvio_adfstat.png" alt="Logo" width="426" height="407">
 </p>
 The image above it a measurement of frequency density between the Z-Score and ADF Test Statistics (the smaller the better) and shows that the high majority of trades are concentrated between 2 and 2.5 Standar Deviations and -3,25 and -4 on T-Statistic. Both parameters had an entry on our minimum requirement trading rule list, and the did not include most part of the ranges depicted on this plot.
+
+<br />
 
 <p align="center">
   <img src="adf_stat_percoint.png" alt="Logo" width="690" height="660">
 </p>
 The image above showed the relation between the T-Statistics and the number of periods that pair was cointegrated, you can see that if you have more periods, the results of the tests came better giving a higher concentration of 1% critical value (or 99% on the Stationarity Test)
 
+<br />
 <p align="center">
   <img src="adfstat_periodo.png" alt="Logo" width="631" height="611">
 </p>
 The image above show us Test Statistics versus Number of Days cointegrated, its a pretty regular distribution, showing that there was no clear distinction between Stationarity test results and the size of the time series sample tested.   
 
+<br />
 <p align="center">
   <img src="meia_vida_adfstat.png" alt="Logo" width="426" height="407">
 </p>
 The image above it a measurement of frequency density between ADF Test Statistics and the Half-life of trades, indicating a possible correlation between higher T-statistics and lower half-life, which meant that trades that had an lower estimate of days to return to its Z-Score Average had better results in the Cointegration Test.   
 
+<br />
 <p align="center">
   <img src="desvio_meiavida.png" alt="Logo" width="628" height="607">
 </p>
 The image above showed concentration of profitable trades between Z-Score and Half-life, showing that the section between 2 and 3 Standard seemed to have less proportion of profitable trades. We thought we could find some "sweet spots" as an unadvised person could conclude at first glance, but some of the regions had only marginal higher concentration of winning or losing trades.
 
+<br />
 <p align="center">
   <img src="adf_sign_desvio.png" alt="Logo" width="643" height="607">
 </p>
