@@ -179,13 +179,11 @@ Those results showed evidence that cointegration investment strategy using machi
 
 * Market data (Stock Price) was obtained through the use of a python library that collect data directly from financial institutions database, we used the metatrader 5 platform connecting on the Rico Investimentos broker, the data was in line with B3 price reference Database.
 
-* Our dataset was created by scaning historical data every 30 minutes, we called this the Cube Generator function.
+* Our dataset was created by scaning historical data every 30 minutes, we called this the Cube Generator function, our database had more than 400MM lines with around 50 features.
 
 * The first version of the Cube Generator was expected to take more than 120 days of processing time, we had to heavily optmize it, improving iteration/looping structures, migrating from pandas dataframe to dictionary on many of the manipulations and improving pandas indexing where dataframe manipulation remained.
 
-* Aditionally, we executed Cube Generator using Python ProcessPoolExecutor from concurrent.futures, executing one different process for each stock pair.
-
-* In the end, our database had more than 400MM lines with around 50 features
+* Aditionally, we executed Cube Generator using Python ProcessPoolExecutor from concurrent.futures, distributing the creation of the cube for a single stock pair as a process on the CPU available, we had almost 4k pairs on the loop.
 
 * We used adftest, OLS functions from statsmodels to perform the stationarity test and regression respectively.
 
@@ -198,6 +196,8 @@ Those results showed evidence that cointegration investment strategy using machi
 * We created our own gridsearch library for hyperparameter optimization, the ones available on python libraries used evaluation metrics that were not adequate for our purposes.
 
 * Since we optimized our models to have higher precision feature selecion was not an easy task. It is known that there is no best method for selecting the best features from your data set to your model, instead, you must discover what works best for your specific problem using careful systematic experimentation, there is a large range of different methods to approach that, we used a combination of feature importante from Random Forest and field expert knowledge.
+
+* We had to use the function predict_proba from the classifiers instead of just taking the binary return from the standard predict function. This function provides a probability estimate provided by the classifier, in our case, the chances estimated by the model of having profits or not. We use 70% or higher as the threshold, now as you raise the threshold, thereby increasing overall precision you endup flaggind less and less profitable trades.
 
 <!-- Data -->
 ## Data Visualization
