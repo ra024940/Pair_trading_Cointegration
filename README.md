@@ -176,18 +176,27 @@ Those results showed evidence that cointegration investment strategy using machi
 <p id="1j"> (3) Trading costs is not a subject to be neglected, there are many different ways to set up your system that can affect profitability, for instance, acquiring a proprietary trading algorithm, which is responsable only for delivering your orders could be expensive, but also improve your response time to trade, keep in mind that delays can make you miss trades or enter in different price conditions compared to what you fed to your learning method </p>
 
 <!-- Development -->
-## Development Topics
+## Development Topics and Challenges
 
-<!-- Challenges & Issues -->
-## Major Challenges
+* Market data (Stock Price) was obtained through the use of a python library that collect data directly from financial institutions database, we used the metatrader 5 platform connecting on the Rico Investimentos broker, the data was in line with B3 price reference Database.
 
-* Intraday vs Day Close
-* Dataset creation Peformance Optimization
-* Modelling Time Series (i.i.d)
-* Sampling - Clusters on Data
-* Recall vs Precision Trade-off
+* Our dataset was created by scaning historical data every 30 minutes, we called this the Cube Generator function.
 
-See the [open issues](https://github.com/ra024940/Pair_trading_Cointegration/issues) for a list of proposed features (and known issues).
+* The first version of the Cube Generator was expected to take more than 120 days of processing time, we had to heavily optmize it, improving iteration/looping structures, migrating from pandas dataframe to dictionary on many of the manipulations and improving pandas indexing where dataframe manipulation remained.
+
+* Aditionally, we executed Cube Generator using Python ProcessPoolExecutor from concurrent.futures, executing one different process for each stock pair.
+
+* In the end, our database had more than 400MM lines with around 50 features
+
+* We used adftest, OLS from statsmodels to perform the stationarity test and regression respectively.
+
+* To simulate trading results (finantial) we had to scan price evolution to capture when our profit/loss criteria would be fulfilled, this was executed for each trade on every pair, scaninng prices every 30 min.
+
+* It's mathematically challenging to calculate profit/loss in finantial terms ($$$) for a movement of N Standard-deviations on the Z-Score, remember that the Z-Score is a normalized version of the regression error term and you want to know for a given pair of stocks A/B how much relative movement on the prices would make for the corresponding expected movement in terms of standard deviation of the error term.
+
+* Since our dataset had relativelly large size, we had to came up with a stratified sample of trades that respected the global representativity, otherwise it would be impractical to use learning systems online due to the response time.
+
+* We created our own gridsearch library for hyperparameter optimization, the ones available on python libraries used evaluation metrics that were not adequate for our purposes.
 
 <!-- Data -->
 ## Data Visualization
