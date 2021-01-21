@@ -278,6 +278,13 @@ Project Link: [https://github.com/ra024940/Pair_trading_Cointegration](https://g
 * Do, B., Faff, R. and Hamza, K. (2006) A New Approach to Modelling and Estimation for Pairs Trading.
 * Hoel Christoffer Haakon, Statistical Arbitrage Pairs: Can Cointegration Capture Market Neutral Profits?
 * Harlacher Markus, 2016, Cointegration Based Algorithmic - Pairs Trading, Dissertation of the University of St. Gallen
+* Geron Aurelien (2017), Systematic Trading. Hands-On Machine Learning with Scikit-Learn & TensorFlow. Sebastopol: O’Reilly
+* Robert Carver (2015), Hampshire: HARRIMAN HOUSE
+* Jason Brownlee, Machine Learning Mastery, Australia, https://machinelearningmastery.com/
+
+International Narcotics Control Board 1999, United Nations, accessed 1 October 1999, <http://www.incb.org>
+Anon.(2005) Handbook of physics. London: Wiley
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
