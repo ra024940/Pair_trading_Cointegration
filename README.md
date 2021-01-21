@@ -282,10 +282,6 @@ Project Link: [https://github.com/ra024940/Pair_trading_Cointegration](https://g
 * Robert Carver (2015), Hampshire: HARRIMAN HOUSE
 * Jason Brownlee, Machine Learning Mastery, Australia, https://machinelearningmastery.com/
 
-International Narcotics Control Board 1999, United Nations, accessed 1 October 1999, <http://www.incb.org>
-Anon.(2005) Handbook of physics. London: Wiley
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
