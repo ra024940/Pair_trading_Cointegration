@@ -261,7 +261,7 @@ The image above show us concentration of profitable trades between Z-Score and c
 <!-- Online -->
 ## Online Rollout
 
-The implementation of the models into a online stock market is not the scope of this article since it is sensitive intellectual property, please, find the contacts below for further information.
+The deplyment of the models into a online stock market is not the scope of this article since it contains sensitive intellectual property, please, find the contacts below for further information.
 
 <!-- CONTACT -->
 ## Contact
