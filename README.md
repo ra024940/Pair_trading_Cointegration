@@ -278,8 +278,8 @@ Project Link: [https://github.com/ra024940/Pair_trading_Cointegration](https://g
 * Do, B., Faff, R. and Hamza, K. (2006) A New Approach to Modelling and Estimation for Pairs Trading.
 * Hoel Christoffer Haakon, Statistical Arbitrage Pairs: Can Cointegration Capture Market Neutral Profits?
 * Harlacher Markus, 2016, Cointegration Based Algorithmic - Pairs Trading, Dissertation of the University of St. Gallen
-* Geron Aurelien (2017), Systematic Trading. Hands-On Machine Learning with Scikit-Learn & TensorFlow. Sebastopol: O’Reilly
-* Robert Carver (2015), Hampshire: HARRIMAN HOUSE
+* Geron Aurelien (2017), Hands-On Machine Learning with Scikit-Learn & TensorFlow. Sebastopol: O’Reilly
+* Robert Carver (2015), Systematic Trading. Hampshire: HARRIMAN HOUSE
 * Jason Brownlee, Machine Learning Mastery, Australia, https://machinelearningmastery.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
