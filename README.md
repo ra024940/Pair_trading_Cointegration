@@ -212,6 +212,7 @@ Those results showed evidence that cointegration investment strategy using machi
 The image above show the distribution of trades in terms Z-Score mearures (How many Standard Deviation away from the mean), we can clearly see the normal distribution curve.
 
 <br />
+<br />
 
 <p align="center">
   <img src="desvio_adfstat.png" alt="Logo" width="426" height="407">
