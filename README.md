@@ -146,61 +146,61 @@ In summary, we created a list of model candidates by combining different sets of
 <!-- Results -->
 ### Model Evaluation and Results
 
-To evaluate the results of our models, we did not use classical train/test split of data, instead, we used a walk-forward approach. When dealing with time-related and dynamically changing environments, where the characteristics of the environment change throughout time, it is best to use time-based splitting to provide statistically robust model evaluation and best simulate real-life scenarios. For this we should use time-based cross validation, a method taken from the time-series field, which forms a type of “sliding window” training approach, as you can see represented in the image below. In this method, older data is dropped while we move to further steps (or walks as we will refer to), this is particular useful for our dataset, since the features that we engineered to capture financial market seasonality usually lost predictive power the older it gets. Other methods, such as traditional cross-validation or K-fold, create several slices of data that are shuffled to create multiple train/test splits, those could be applied to our project either, we cannot choose random samples and assign them to either the test set or the train set because it makes no sense to use the values from the future to forecast values in the past.
+To evaluate the results of our models, we did not use classical train/test split of data, instead, we used a walk-forward approach. When dealing with time-related and dynamically changing environments, where the characteristics of the environment change throughout time, it is best to use time-based splitting to provide statistically robust model evaluation and best simulate real-life scenarios. For this we should use time-based cross validation, a method taken from the time-series field, which forms a type of “sliding window” training approach, as you can see represented in the image below. In this method, older data is dropped while we move to further steps (or walks as we will refer to), this is particularly useful for our dataset since the features that we engineered to capture financial market seasonality usually lost predictive power the older it gets. Other methods, such as traditional cross-validation or K-fold, create several slices of data that are shuffled to create multiple train/test splits, those could be applied to our project either, we cannot choose random samples and assign them to either the test set or the train set because it makes no sense to use the values from the future to forecast values in the past.
 <br />
 <p align="center">
   <img src="sliding_window.png" alt="Logo" width="560" height="266">
 <br />
 
-Evaluating a classifier is often significantly trickier than evaluating a regressor, there are many performance measures available, along the way we kept track using the confusion matrix, but in the end decided for optimizing the model based on positive predictive value, also know as Precision.
+Evaluating a classifier is often significantly trickier than evaluating a regressor, there are many performance measures available, along the way we kept track using the confusion matrix, but in the end, we decided for optimizing the model based on positive predictive value, also known as Precision.
 
 <br />
 <p align="center">
   <img src="precision.png" alt="Logo" width="354" height="66">
 <br />
 
-Using precision for evaluating and optimizing our models, meant that we settle for having a higher accuracy in predicting if a trade would be profitable or not, but, also meant that we would incur in having a high level of False Negative. In other words we would miss many profitable trades, and, to achieve the levels of precision we were expecting we could end up creating a highly selective model that would flag only a few trades monthly and that ought to affect our confidence interval. To mitigate this we diversified our model list with candidates that had different restriction levels.
+Using precision for evaluating and optimizing our models, meant that we settle for having a higher accuracy in predicting if a trade would be profitable or not, but, also meant that we would incur in having a high level of False Negative. In other words, we would miss many profitable trades, and, in order to achieve the levels of precision we were expecting we could end up creating a highly selective model that would flag only a few trades monthly and that ought to affect our confidence interval. To mitigate this we diversified our model list with candidates that had different restriction levels.
 
-In the end, machine learning models outperformed the systematic rules trading system, in terms of precision, but specially in terms of stability <a href="#1h">**(1)**</a>. This was particullar important, equilibrium was one of our main goals by using lerning methods, and this is one of the most critical issues of implementing automatic trading systems, because if you build a trading system that has, on average, good returns but suffer from wild variations (extremelly good and bad periods) you could, potentially, endup losing your account, and that is much more frequent than an unadvised person could guess.
+In the end, machine learning models outperformed the systematic rules trading system, in terms of precision, but especially in terms of stability <a href="#1h">**(1)**</a>. This was particularly important, equilibrium was one of our main goals by using learning methods, and this is one of the most critical issues of implementing automatic trading systems, because if you build a trading system that has, on average, good returns but suffer from wild variations (extremely good and bad periods) you could, potentially, end up losing your account, and that is much more frequent than an unadvised person could guess.
 
-Finally, syistematic trading rules end up having, on average 64% precision <a href="#1i">**(2)**</a> with 18% of standard deviation based on different measurement periods. Learning models had 69% precision on average, with only 6% of standard deviation, you might think that this difference is small, but it is more than enough to offset all trading costs <a href="#1j">**(3)**</a>, besides the fact that systematic systems were much less adaptable to different market condition and had to be much more restrictive, flagging considerably less trades on the same period, considering only learning models that produce around the same amount of trades monthly, we achieved 73% of precision.
+Finally, systematic trading rules end up having, on average 64% precision <a href="#1i">**(2)**</a> with 18% of standard deviation based on different measurement periods. Learning models had 69% precision on average, with only 6% of standard deviation, you might think that this difference is small, but it is more than enough to offset all trading costs <a href="#1j">**(3)**</a>, besides the fact that systematic systems were much less adaptable to different market condition and had to be much more restrictive, flagging considerably fewer trades on the same period, considering only learning models that produce around the same amount of trades monthly, we achieved 73% of precision.
 
 Those results showed evidence that cointegration investment strategy using machine learning could be profitable in the brazilian stock market, additionally, we continued the studies by applying our models to fresh data for the 2nd half of 2020 and the results were in line with what we presented above.  
 
-<p id="1h"> (1) By stability, we mean that had the ability to generalize, or the model's ability to adapt to different market conditions, such as neutral or high volatility markets, bull markets or bear markets. We could do that by analysing to what conditions the models were exposed in the walks of the sliding windows approach.</p>
+<p id="1h"> (1) By stability, we mean that had the ability to generalize, or the model's ability to adapt to different market conditions, such as neutral or high volatility markets, bull markets or bear markets. We could do that by analyzing to what conditions the models were exposed in the walks of the sliding windows approach.</p>
 
-<p id="1i"> (2) Those values are based on the sliding windows approach and collected with our backtest systems that was mentioned above.</p>
+<p id="1i"> (2) Those values are based on the sliding windows approach and collected with our backtest systems which was earlier on this article.</p>
 
-<p id="1j"> (3) Trading costs is not a subject to be neglected, there are many different ways to set up your system that can affect profitability, for instance, acquiring a proprietary trading algorithm, which is responsable only for delivering your orders could be expensive, but also improve your response time to trade, keep in mind that delays can make you miss trades or enter in different price conditions compared to what you fed to your learning method </p>
+<p id="1j"> (3) Trading costs is not a subject to be neglected, there are many different ways to set up your system that can affect profitability, for instance, acquiring a proprietary trading algorithm, which is responsible only for delivering your orders could be expensive but also improve your response time to trade, keep in mind that delays can make you miss trades or enter in different price conditions compared to what you fed to your learning method </p>
 
 <!-- Development -->
 ## Development Topics and Challenges
 
-* Market data (Stock Price) was obtained through the use of a python library that collect data directly from financial institutions database, we used the metatrader 5 platform connecting on the Rico Investimentos broker, the data was in line with B3 price reference Database.
+* Market data (Stock Price) was obtained through the use of a python library that collects data directly from financial institutions database, we used the metatrader 5 platform connecting on the Rico Investimentos broker, the data was in line with B3 price reference Database.
 
-* Our dataset was created by scaning historical data every 30 minutes, we called this the CubeGenerator function, our database had more than 400MM lines with around 50 features.
+* Our dataset was created by scanning historical data every 30 minutes, we called this the CubeGenerator function, our database had more than 400MM lines with around 50 features.
 
-* The first version of the Cube Generator was expected to take more than 120 days of processing time, we had to heavily optmize it, improving iteration/looping structures, migrating from pandas dataframe to dictionary on many of the manipulations and improving pandas indexing where dataframe manipulation remained.
+* The first version of the Cube Generator was expected to take more than 120 days of processing time, we had to heavily optimize it, improving iteration/looping structures, migrating from pandas dataframe to dictionary on many of the manipulations, also improving pandas indexing where dataframe manipulation remained.
 
-* The CubeGenerator function consisted of a Scan that iterated through intraday prices of a given pair of stocks A/B, to test if, at that moment, the pair was cointegrated. In other words, for each intraday point in the time-series, was performed a regression to describe the price of the stock A in terms of stock B, concatenating the series of N-1 closing day prices and the intraday price in question. The error term product of this regression was transformed into a Z-Score series and tested for stationarity using the Augmented Dickey-Fuller test. This was executed multiple times, on different N's (100 days, 120 days, 140 days.....), as stated previouly.
+* The CubeGenerator function consisted of a Scan that iterated through intraday prices of a given pair of stocks A/B, to test if, at that moment, the pair was cointegrated. In other words, for each intraday point in the time-series, was performed a regression to describe the price of the stock A in terms of stock B, concatenating the series of N-1 closing day prices and the intraday price in question. The error term product of this regression was transformed into a Z-Score series and tested for stationarity using the Augmented Dickey-Fuller test. This was executed multiple times, on different N's (100 days, 120 days, 140 days.....), as stated previously.
 
 * Additionally, we executed Cube Generator using Python ProcessPoolExecutor from concurrent.futures, distributing the creation of the cube for a single stock pair as a process on the CPU available, we had almost 4k pairs on the loop.
 
 * We used adftest, OLS functions from statsmodels to perform the stationarity test and regression respectively.
 
-* To simulate trading results (finantial) we had to scan price evolution to capture when our profit/loss criteria would be fulfilled, this was executed for each trade on every pair, scaninng prices every 30 min.
+* To simulate trading results (financial) we had to scan price evolution to capture when our profit/loss criteria would be fulfilled, this was executed for each trade on every pair, scanning prices every 30 min.
 
-* It's mathematically challenging to calculate profit/loss in finantial terms ($$$) for a movement of N Standard-deviations on the Z-Score, remember that the Z-Score is a normalized version of the regression error term and you want to know for a given pair of stocks A/B how much relative movement on the prices would make for the corresponding expected movement in terms of standard deviation of the error term.
+* It's mathematically challenging to calculate profit/loss in financial terms ($$$) for a movement of N Standard-deviations on the Z-Score, remember that the Z-Score is a normalized version of the regression error term and you want to know for a given pair of stocks A/B how much relative movement on the prices would make for the corresponding expected movement in terms of standard deviations from the error term.
 
-* Since our dataset had relativelly large size, we had to came up with a stratified sample of trades that respected the global representativity, otherwise it would be impractical to use learning systems online due to the response time, this also solved a problem that we noticed with our dataset, there were large clusters of data generated by persistent pairs over the period of a few days. This occured because the pair was in trading condition this whole time, but the cointegration characteristics were almost identical, thus creating a source of bias on the dataset.
+* Since our dataset had relativelly large size, we had to come up with a stratified sample of trades that respected the global representativity, otherwise it would be impractical to use learning systems online due to the response time, this also solved a problem that we noticed with our dataset, there were large clusters of data generated by persistent pairs over the period of a few days. This occurred because the pair was in trading condition this whole time, but the cointegration characteristics were almost identical, thus creating a source of bias on the dataset.
 
-* The learning algorithm we used for this project were Logistic Regression, Random Forest and Gradient Boosting, the later outperform its companions though.
+* The learning algorithm we used for this project were Logistic Regression, Random Forest and Gradient Boosting, the latter outperform its companions though.
 
 * We created our own gridsearch library for hyperparameter optimization, the ones available on python libraries used evaluation metrics that were not adequate for our purposes.
 
-* Since we optimized our models to have higher precision feature selecion was not an easy task. It is known that there is no best method for selecting the best features from your data set to your model, instead, you must discover what works best for your specific problem using careful systematic experimentation, there is a large range of different methods to approach that, we used a combination of feature importante from Random Forest and field expert knowledge.
+* Since we optimized our models to have higher precision feature selection was not an easy task. It is known that there is no best method for selecting the best features from your data set to your model, instead, you must discover what works best for your specific problem using careful systematic experimentation, there is a large range of different methods to approach that, we used a combination of feature importance from Random Forest and field expert knowledge.
 
-* We had to use the function predict_proba from the classifiers instead of just taking the binary return from the standard predict function. This function provides a probability estimate provided by the classifier, in our case, the chances estimated by the model of having profits or not. We use 70% or higher as the threshold, now as you raise the threshold, thereby increasing overall precision you endup flaggind less and less profitable trades.
+* We had to use the function predict_proba from the classifiers instead of just taking the binary return from the standard predict function. This function provides a probability estimate provided by the classifier, in our case, the chances estimated by the model of having profits or not. We use 70% or higher as the threshold, now as you raise the threshold, thereby increasing overall precision you end up flagging less and less profitable trades.
 
 <!-- Data -->
 ## Data Visualization
@@ -209,7 +209,7 @@ Those results showed evidence that cointegration investment strategy using machi
 <p align="center">
   <img src="distribution_desvio.png" alt="Logo" width="370" height="270">
 </p>
-The image above show the distribution of trades in terms Z-Score mearures (How many Standard Deviation away from the mean), we can clearly see the normal distribution curve.
+The image above shows the distribution of trades in terms Z-Score mearures (How many Standard Deviation away from the mean), we can clearly see the normal distribution curve.
 
 <br />
 <br />
@@ -217,7 +217,7 @@ The image above show the distribution of trades in terms Z-Score mearures (How m
 <p align="center">
   <img src="desvio_adfstat.png" alt="Logo" width="426" height="407">
 </p>
-The image above it a measurement of frequency density between the Z-Score and ADF Test Statistics (the smaller the better) and shows that the high majority of trades are concentrated between 2 and 2.5 Standar Deviations and -3,25 and -4 on T-Statistic. Both parameters had an entry on our minimum requirement trading rule list, and the did not include most part of the ranges depicted on this plot.
+The image above it a measurement of frequency density between the Z-Score and ADF Test Statistics (the smaller the better) and shows that the high majority of trades are concentrated between 2 and 2.5 standard deviations and -3,25 and -4 on T-Statistic. Both parameters had an entry on our minimum requirement trading rule list, and they did not include most part of the high density ranges depicted on this plot.
 
 <br />
 <br />
@@ -225,7 +225,7 @@ The image above it a measurement of frequency density between the Z-Score and AD
 <p align="center">
   <img src="adf_stat_percoint.png" alt="Logo" width="690" height="660">
 </p>
-The image above showed the relation between the T-Statistics and the number of periods that pair was cointegrated, you can see that if you have more periods, the results of the tests came better giving a higher concentration of 1% critical value (or 99% on the Stationarity Test)
+The image above shows the relation between the T-Statistics and the number of periods that pair was cointegrated, you can see that if you have more periods, the results of the tests came better giving a higher concentration of 1% critical value (or 99% on the Stationarity Test)
 
 <br />
 <br />
@@ -233,13 +233,13 @@ The image above showed the relation between the T-Statistics and the number of p
 <p align="center">
   <img src="adfstat_periodo.png" alt="Logo" width="631" height="611">
 </p>
-The image above show us Test Statistics versus Number of Days cointegrated, its a pretty regular distribution, showing that there was no clear distinction between Stationarity test results and the size of the time series sample tested.   
+The image above shows Test Statistics versus Number of Days cointegrated, its a pretty regular distribution, showing that there was no clear distinction between Stationarity test results and the size of the time series sample tested.   
 
 <br />
 <p align="center">
   <img src="meia_vida_adfstat.png" alt="Logo" width="426" height="407">
 </p>
-The image above it a measurement of frequency density between ADF Test Statistics and the Half-life of trades, indicating a possible correlation between higher T-statistics and lower half-life, which meant that trades that had an lower estimate of days to return to its Z-Score Average had better results in the Cointegration Test.   
+The image above is a measurement of frequency density between ADF Test Statistics and the Half-life of trades, indicating a possible correlation between higher T-statistics and lower half-life, which meant that trades that had a lower estimate of days to return to their Z-Score Average had better results in the Cointegration Test.   
 
 <br />
 <br />
@@ -247,7 +247,7 @@ The image above it a measurement of frequency density between ADF Test Statistic
 <p align="center">
   <img src="desvio_meiavida.png" alt="Logo" width="628" height="607">
 </p>
-The image above showed concentration of profitable trades between Z-Score and Half-life, showing that the section between 2 and 3 Standard seemed to have less proportion of profitable trades. We thought we could find some "sweet spots" as an unadvised person could conclude at first glance, but some of the regions had only marginal higher concentration of winning or losing trades.
+The image above showed a concentration of profitable trades between Z-Score and Half-life, showing that the section between 2 and 3 Standard seemed to have less proportion of profitable trades. We thought we could find some "sweet spots" as an unadvised person could conclude at first glance, but some of the regions had only an marginal higher concentration of winning or losing trades.
 
 <br />
 <br />
@@ -255,13 +255,13 @@ The image above showed concentration of profitable trades between Z-Score and Ha
 <p align="center">
   <img src="adf_sign_desvio.png" alt="Logo" width="643" height="607">
 </p>
-The image above show us concentration of profitable trades between Z-Score and critical values for the stationarity test. It is possible to see that there is no important concentration of profitable trades. One could conclude, based on the last two images that there is no "easy to spot", simple rules, that we could apply to obtain an edge when investing using the cointegration method, and, that is precisely our findings, there are many subtle relations between the dataset features and profitability of trades that could only captured by the learning methods.
+The image above shows a concentration of profitable trades between Z-Score and critical values for the stationarity test. It is possible to see that there is no important concentration of profitable trades. One could conclude, based on the last two images that there is no "easy to spot", simple rules, that we could apply to obtain an edge when investing using the cointegration method, and, that is precisely our findings, there are many subtle relations between the dataset features and profitability of trades that could only be captured by the learning methods.
 <br />
 
 <!-- Online -->
 ## Online Rollout
 
-The deplyment of the models into a online stock market is not the scope of this article since it contains sensitive intellectual property, please, find the contacts below for further information.
+The deployment of the models into the online stock market is not the scope of this article since it contains sensitive intellectual property, please, find the contacts below for further information.
 
 <!-- CONTACT -->
 ## Contact
